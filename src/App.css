@@ -56,11 +56,40 @@ body {
 }
 
 .task-item {
+  display:flex;
+  align-items: center;
+  justify-content:space-between;
   margin-bottom: 20px;
+  padding: 0 0.5rem;
+  border-radius: 8px;
+
   background-color: #ECE3D9;
   
 }
+.yourTodo{
+  border:2px solid black;
+  padding: 0.5rem ;
+  border-radius: 8px;
 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.yourTodo > div > p {
+  margin-left:8px;
+  margin-top:0;
+  margin-bottom:0;
+
+}
+.list{
+  padding: 1rem 0.5rem;
+  border-radius: 8px;
+
+  min-height: 10rem;
+  background-color: white;
+}
 .input-group-prepend .btn {
   background-color: #8C7561;
   border-color: #8C7561;
@@ -97,6 +126,12 @@ body {
 }
 .spacer{
   height:2rem;
+}
+.spacer3{
+  height:1.5rem;
+}
+.spacer1{
+  height:1rem;
 }
 
 .circle{

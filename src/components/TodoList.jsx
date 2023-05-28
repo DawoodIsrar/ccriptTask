@@ -125,20 +125,24 @@ const TodoList = () => {
               </Button>
             </div>
           </div>
-          <div
-            style={{
-              marginTo: '1rem',
+          <div className="spacer3" />
 
-              height: 'auto',
+          <div className="yourTodo">
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+              }}
+            >
+              <FontAwesomeIcon icon={faPlus} />
 
-              // borderRadius: '5px',
-              // border: 'none',
-              // height: '2rem',
-              display: 'block',
-              // alignItems: 'center',
-              backgroundColor: '#B79F97',
-            }}
-          >
+              <p> Your Todos</p>
+            </div>
+            <FontAwesomeIcon icon={faPlus} />
+          </div>
+          <div className="spacer1" />
+
+          <div className="list">
             {tasks.map((task, index) => (
               <div key={task.id} className="task-item">
                 {updated && index === rowIndex ? (
@@ -148,7 +152,8 @@ const TodoList = () => {
                       style={{
                         borderRadius: '5px',
                         border: 'none',
-                        height: '2rem',
+
+                        height: '2.5rem',
                         display: 'flex',
                         outline: 'none',
                       }}
@@ -160,9 +165,12 @@ const TodoList = () => {
                       style={{
                         borderRadius: '5px',
                         border: 'none',
-                        height: '2rem',
+                        height: '2.5rem',
+                        width: '2.5rem',
+
                         display: 'flex',
                         alignItems: 'center',
+                        justifyContent: 'center',
                         backgroundColor: '#B79F97',
                       }}
                       // variant="primary"
@@ -174,7 +182,7 @@ const TodoList = () => {
                 ) : (
                   <p>{task.taskDetail}</p>
                 )}
-                <div style={{ display: 'inline-flex' }}>
+                <div style={{ display: 'inline-flex', gap: '0.3rem' }}>
                   <div>
                     <Button
                       variant="danger"
@@ -184,9 +192,12 @@ const TodoList = () => {
                       style={{
                         borderRadius: '5px',
                         border: 'none',
-                        height: '2rem',
+                        height: '2.5rem',
+                        width: '2.5rem',
+
                         display: 'flex',
                         alignItems: 'center',
+                        justifyContent: 'center',
                         backgroundColor: '#B79F97',
                       }}
                       onClick={() => handleDeleteTask(task.id)}
@@ -203,12 +214,15 @@ const TodoList = () => {
                       style={{
                         borderRadius: '5px',
                         border: 'none',
-                        height: '2rem',
+                        height: '2.5rem',
+                        width: '2.5rem',
+
                         display: 'flex',
                         alignItems: 'center',
+                        justifyContent: 'center',
                         backgroundColor: '#B79F97',
                       }}
-                      onClick={() => setRowIndex(index)}
+                      onClick = {() => setRowIndex(index)}
                     >
                       <FontAwesomeIcon icon={faEdit} />
                     </Button>
@@ -218,6 +232,7 @@ const TodoList = () => {
             ))}
           </div>
         </div>
+        {/* </div> */}
       </div>
     </div>
   )
