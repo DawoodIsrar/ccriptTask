@@ -1,28 +1,70 @@
-Description:
-The TodoList App is a web application built using React and Node.js that allows users to create and manage their daily tasks. It provides a user-friendly interface where users can add new tasks, update existing tasks, and delete tasks. The app uses an SQL database (Microsoft SQL Server) to store task data and communicates with the backend API to perform CRUD operations.
+# Getting Started with Create React App
 
-Key Features:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Add new tasks: Users can enter task details and add them to the task list.
-Update tasks: Users can edit and update the details of existing tasks.
-Delete tasks: Users can remove tasks from the task list.
-User-friendly interface: The app has an intuitive and responsive UI for easy task management.
-Real-time updates: The task list is dynamically updated without requiring a page refresh.
-Error handling: The app provides informative error messages for better user experience.
-Database integration: The app uses Microsoft SQL Server as the database to store task data.
-Tech Stack:
+## Available Scripts
 
-Frontend: React, React Bootstrap, FontAwesome, Axios
-Backend: Node.js, Express
-Database: Microsoft SQL Server
-Other: React Toastify
-Installation and Usage:
+In the project directory, you can run:
 
-Clone the repository: git clone <repository_url>
-Install dependencies: npm install
-Set up the SQL Server database and user (as mentioned in the repository's documentation).
-Update the .env file with the appropriate database connection details.
-Start the backend server: npm run server
-Start the frontend development server: npm run start
-Access the application in a web browser at http://localhost:3000.
-This repository provides a ready-to-use TodoList App with database integration, allowing users to efficiently manage their tasks.
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
